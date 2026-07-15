@@ -1,1 +1,1 @@
-These items are used to host a web app containing educational resources. Although created for MSEL use purposes, you can use these tools too.
+These items are used to host a web app containing educational resources. Although created for MSEL use purposes, you can use these tools too. Just click the link.
