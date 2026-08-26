@@ -140,7 +140,7 @@ input:focus{
 .controls{
   position:sticky;
   bottom:0;
-  background:rgba(255,255,255,.96);
+  background:#000000;
   backdrop-filter: blur(8px);
   border-top:3px solid var(--line);
   padding:16px 18px;
@@ -166,15 +166,15 @@ button:disabled{
   opacity:.35;
   cursor:not-allowed;
 }
-.primary{ background:var(--accent); border-color:var(--accent); color:#fff; }
-.next{ background:var(--next); border-color:var(--next); color:#fff; }
+.primary{ background:var(--accent); border-color:var(--accent); color:#e6e6e6; }
+.next{ background:var(--next); border-color:var(--next); color:#e6e6e6; }
 .danger{ background:#fff1f2; border-color:#fecaca; color:#991b1b; }
 .controlsFooter{
   margin-top:24px;
   text-align:center;
   font-size:14px;
   font-weight:800;
-  color:var(--muted);
+  color:#e6e6e6;
 }
 .congratsWrap{
   display:grid;
@@ -328,17 +328,17 @@ button:disabled{
 <input id="inputBox" class="hidden" placeholder="Enter the spelling word..." autocomplete="off" spellcheck="false"/>
 <span id="resultTag" class="hidden"></span>
 </div>
-<div class="controls" id="controls" style="background:#000000">
+<div class="controls" id="controls">
 <div class="btnRow">
 <button id="btnLook">Look</button>
 <button id="btnSay" disabled>Say</button>
 <button id="btnCover" disabled>Cover</button>
 <button id="btnWrite" disabled>Write</button>
-<button id="btnCheck" class="primary" style="color:#e6e6e6" disabled>Check</button>
-<button id="btnNext" class="next" style="color:#e6e6e6" disabled>Next Word</button>
+<button id="btnCheck" class="primary" disabled>Check</button>
+<button id="btnNext" class="next" disabled>Next Word</button>
 <button id="btnReset" class="danger">Restart Word</button>
 </div>
-<div class="controlsFooter" style="color:#e6e6e6">© <span id="year"></span> Linus Stephen</div>
+<div class="controlsFooter">© <span id="year"></span> Linus Stephen</div>
 </div>
 </div>
 <div class="congratsWrap hidden" id="congratsPage">
@@ -346,7 +346,7 @@ button:disabled{
 <div style="color:#e6e6e6">You got <span id="finalScore">15/15</span> correct.</div>
 <div class="wordsGrid" id="wordsGrid"></div>
 <div class="playAgainRow">
-<button id="btnPlayAgain" class="primary" style="color:#e6e6e6">Practice Again</button>
+<button id="btnPlayAgain" class="primary">Practice Again</button>
 </div>
 </div>
 </section>
